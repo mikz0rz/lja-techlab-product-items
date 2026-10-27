@@ -1,0 +1,6 @@
+.DS_Store
+.env
+
+# Students' work stays local — only the placeholder is tracked
+outputs/*
+!outputs/.gitkeep
