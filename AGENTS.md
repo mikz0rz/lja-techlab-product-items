@@ -11,6 +11,19 @@ outputs/                    every step saves a numbered file here
 examples/sample-idea.md     a ready-made idea, if they want to try first
 ```
 
+## If you were pointed at the repo URL
+
+The team may have given you only a link and no files. Get the files before doing anything else:
+
+```
+git clone https://github.com/mikz0rz/lja-techlab-product-items.git idea-lab
+cd idea-lab
+```
+
+No git? Download the ZIP from the repo page and unzip it, or fetch single files from `https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/<path>`. You need `AGENTS.md` and everything under `skills/`.
+
+Work in a folder you control. Never push to the upstream repo, and never delete a team's `idea.md` or files in `outputs/`. A fresh `idea.md` is EMPTY, so you start at step 0.
+
 ## At the start of every session
 
 Look at the files and work out where the team is:

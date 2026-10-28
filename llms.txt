@@ -1,0 +1,21 @@
+# Idea Validation Lab
+
+> Test a product idea with AI before building it: smash the idea, build a proto-persona, interview that persona round by round, then check its predictions against real people.
+
+Read AGENTS.md first and follow it. It is the coach: it works out where the team is, then runs one step per reply. If `idea.md` is missing or contains `EMPTY`, start at step 0 and ask the team about their idea.
+
+## Files
+
+- [AGENTS.md](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/AGENTS.md): coach instructions, pipeline, rules. Read this first.
+- [skills/red-team/SKILL.md](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/skills/red-team/SKILL.md): step 1, smash the idea into `outputs/01-redteam.md`.
+- [skills/proto-persona/SKILL.md](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/skills/proto-persona/SKILL.md): step 2, build one testable user into `outputs/02-persona.md`.
+- [skills/proto-persona/template.md](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/skills/proto-persona/template.md): the persona template step 2 fills in.
+- [skills/interview-loop/SKILL.md](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/skills/interview-loop/SKILL.md): step 3, interview the persona one round at a time.
+- [examples/sample-idea.md](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/examples/sample-idea.md): a ready-made idea if the team wants to try the lab first.
+- [README.md](https://github.com/mikz0rz/lja-techlab-product-items): the human quick start.
+
+## Optional
+
+- [nexos-workspace/README.md](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/nexos-workspace/README.md): the same pipeline as three separate chat agents, no terminal.
+- [idea.md](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/idea.md): the team's idea. Starts as an EMPTY template.
+- [outputs/](https://github.com/mikz0rz/lja-techlab-product-items/tree/main/outputs): where each step saves its numbered file.

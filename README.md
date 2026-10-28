@@ -2,21 +2,19 @@
 
 Test your product idea with AI before you build anything. Your AI agent smashes the idea, invents a user, interviews that user, and finally sends you to talk to real people.
 
-## Start (2 minutes)
+## Start
 
-1. Download this repo (green **Code** button → **Download ZIP**) and unzip it.
-2. Open a terminal **inside this folder**. This matters: the agent reads its instructions from here.
-   ```
-   cd path/to/this-folder
-   ```
-3. Start your agent:
-   ```
-   hermes
-   ```
-   Other agents work too: `claude`, `codex`, `gemini`, `opencode`, Cursor…
-4. Say hi. The agent asks about your idea and guides you from there.
+Point your agent at this repo. That is the whole setup:
 
-That's it. You don't need to type commands or edit files. Just talk.
+```
+Read https://github.com/mikz0rz/lja-techlab-product-items and start the Idea Validation Lab with me. Follow AGENTS.md.
+```
+
+The agent opens the repo and follows [`AGENTS.md`](https://raw.githubusercontent.com/mikz0rz/lja-techlab-product-items/main/AGENTS.md): it fetches the skills, then asks about your idea. Claude Code, Cursor, Codex, Gemini CLI, opencode, Hermes — anything that can open a link will do. You don't type commands or edit files. Just talk.
+
+Agents that want a map of every file first: [`llms.txt`](llms.txt).
+
+**Agent can't open links?** Download the repo (green **Code** button → **Download ZIP**), unzip it, open a terminal inside the folder, and start your agent there (`hermes`, `claude`, `codex`, `gemini`, `opencode`…). The agent reads `AGENTS.md` automatically.
 
 ## What happens
 
@@ -47,6 +45,7 @@ Things you can say along the way:
 
 ## How it works
 
+- The repo URL is the entry point. `AGENTS.md` tells the agent how to fetch the repo when it has no files yet; `llms.txt` is the file map for agents that look for one.
 - `AGENTS.md` is the coach. Most agents read it automatically (`CLAUDE.md` and `GEMINI.md` point to it).
 - `skills/` holds three skills. Each one ends with a **HANDOFF** block in a fixed format, and the next skill reads it. Skills connect through contracts, not magic.
 - `nexos-workspace/` holds the same three steps as three separate nexos.ai workspace agents, for teams that don't want a terminal.
@@ -62,3 +61,4 @@ Things you can say along the way:
 - Multi-model check: paste the same `02-persona.md` and question into two different models side by side. Where they differ, the model is talking, not the user. Look for `[NEW—MODEL INVENTED]`.
 - Screen: `outputs/` on the left, agent on the right, font 20+, notifications off.
 - Before sharing the repo: `outputs/` should contain only `.gitkeep`, and `idea.md` should be the EMPTY template.
+- If the repo moves, update the URL in three places: `README.md` (Start), `AGENTS.md` (bootstrap section) and `llms.txt`.
